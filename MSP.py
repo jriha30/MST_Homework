@@ -67,12 +67,12 @@ class Graph:
 
 def TestLoop():
     g = Graph()
-    g.Read("graph.csv")
+    g.Read("MSP\MSPFile\MST_Homework\graph.csv")
     g.Process()
 
 def TestLoopOptimized():
     g = Graph()
-    g.Read("graph.csv")
+    g.Read("MSP\MSPFile\MST_Homework\graph.csv")
     g.OptimizedProcess()
 
 print(timeit.Timer(TestLoop).timeit(number=1))
